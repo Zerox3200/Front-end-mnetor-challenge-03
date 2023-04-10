@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* Create the main body */
+.main_counter {
+    width: 80%;
+    margin: auto;
+    height: 608px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create the nested body */
+.nested_counter {
+    background-color: white;
+    width: 500px;
+    height: 312px;
+    border-radius: 13px 13px 89px 13px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 24% 18% 1fr;
+}
+
+/* Create inputs part in nested body */
+.nested_counter_inputs {
+    height: 75px;
+    width: 97%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nested_counter_inputs input {
+    width: 100%;
+    border-radius: 6px;
+    height: 71%;
+    border: solid 0.7px black;
+}
+
+.Days,
+.months,
+.years {
+    width: 24%;
+    height: 65px;
+}
+
+.Days label,
+.months label,
+.years label {
+    position: relative;
+    right: 5px;
+    opacity: 0.7;
+}
+
+/* Create nested counter pt2 */
+.nested_counter_pt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nested_counter_pt2_line {
+    width: 80%;
+    border: solid #0000006b 1px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.nested_counter_pt2 i {
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 28px;
+    margin-top: 5px;
+    background-color: #874eff;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+
+.nested_counter_pt2 i:hover {
+    background-color: black;
+}
+
+/* Create nested counter pt3 */
+.nested_counter_outputs {
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+}
+
+.ouputs {
+    width: 74%;
+    height: 150px;
+}
+
+.ouputs p {
+    font-size: 30px;
+}
+
+.red {
+    border-color: red !important;
+
+}
+
+@media screen and (max-width:767px) {
+    .nested_counter {
+        width: 375px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+  <div class="main_counter">
+    <div class="nested_counter">
+      <div class="nested_counter_inputs">
+        <div class="Days">
+          <label for="days" style="margin-right: 2px;" id="Reding1">Days</label>
+          <input type="text" placeholder="DD" id="days">
+        </div>
+        <div class="months">
+          <label for="months" style="margin-right: 2px;" id="Reding2">Months</label>
+          <input type="text" placeholder="MONTH" id="months">
+        </div>
+        <div class="years">
+          <label for="years" style="margin-right: 2px;" id="Reding3">Years</label>
+          <input type="text" placeholder="YEAR" id="years">
+        </div>
+      </div>
+      <div class="nested_counter_pt2">
+        <div class="nested_counter_pt2_line"></div>
+        <i class="fa-solid fa-seedling" id="submitting"></i>
+      </div>
+      <div class="nested_counter_outputs">
+        <div class="ouputs">
+          <p><span style="color:#874eff;" id="Years_points"></span>Years</p>
+          <p><span style="color:#874eff;" id="Months_points"></span>Months</p>
+          <p><span style="color:#874eff;" id="Days_points"></span>Days</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
